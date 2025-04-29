@@ -5,4 +5,4 @@ O objetivo é reforçar conceitos, resolver desafios e acompanhar a evolução n
 
 ---
 
-🧠 *Estudar um pouco todos os dias faz a diferença!*
+🧠 _Estudar um pouco todos os dias faz a diferença!_
