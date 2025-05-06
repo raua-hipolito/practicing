@@ -1,6 +1,6 @@
 // praticando JavaScript, if else... se a condição for verdadeira, faça isso, senão faça aquilo
 
-let idade = 17;
+let idade = 18;
 let mensagem;
 
 if (idade >= 18) {
