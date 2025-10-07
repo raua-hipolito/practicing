@@ -1,8 +1,10 @@
-let numero1 = 100;
-let numero2 = 23;
+let nota1 = 222;
+let nota2 = 222;
 
-if (numero1 > numero2) {
-  console.log("Condição1");
+if (nota1 > nota2) {
+  console.log("Nota 1 vencedora!");
+} else if (nota1 == nota2) {
+  console.log("Tivemos um empate!");
 } else {
-  console.log("Condição2");
+  console.log("Nota 2 vencedora!!");
 }
