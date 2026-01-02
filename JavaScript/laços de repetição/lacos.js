@@ -31,9 +31,10 @@ const alunos = [
 
 for (let i = 0; i < alunos.length; i++) {
   const element = alunos[i];
+  console.log("-------------------");
   console.log(`Aluno: ${alunos[i].nome} nota: ${alunos[i].nota}`);
 
-  if (alunos[i].nota >= 7) {
+  if (element.nota >= 7) {
     console.log("Aprovado");
   } else {
     console.log("Reprovado");
