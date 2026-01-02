@@ -18,17 +18,25 @@ const input = require("readline-sync");
 
 // // ------------------------------
 
-let numero = 0;
+// let numero = 0;
 
-function parOuImpar(valor) {
-  if (valor % 2 == 0) {
-    return "Par";
-  } else {
-    return "Impar";
-  }
-}
+// function parOuImpar(valor) {
+//   if (valor % 2 == 0) {
+//     return "Par";
+//   } else {
+//     return "Impar";
+//   }
+// }
 
-numero = Number(input.question(`Digite um número: `));
+// numero = Number(input.question(`Digite um número: `));
 
-const result = `O número ${numero} é ${parOuImpar(numero)}.`;
-console.log(result);
+// const result = `O número ${numero} é ${parOuImpar(numero)}.`;
+// console.log(result);
+
+// // ------------------------------
+
+let temperatura = 24;
+
+if (temperatura >= 25) {
+  console.log("Está quente!");
+} else;
