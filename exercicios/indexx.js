@@ -91,3 +91,16 @@ if (saldo >= 0) {
 console.log(situacao);
 
 // // ------------------------------
+
+let idade = 20;
+let classificacao;
+
+if (idade >= 13 && idade <= 19) {
+  classificacao = "adolescente";
+} else {
+  classificacao = "não é adolescente";
+}
+
+console.log(classificacao);
+
+// // ------------------------------
