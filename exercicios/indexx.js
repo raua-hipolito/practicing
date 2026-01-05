@@ -83,7 +83,7 @@ console.log(clima);
 
 let saldo = 10;
 let situacao;
-if (saldo >= 0) {
+if (saldo > 0) {
   situacao = "Você tem dinheiro na conta";
 } else {
   situacao = "Sua conta está negativa";
