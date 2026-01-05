@@ -65,3 +65,18 @@ if (age >= 18) {
 
 console.log(category);
 // // ------------------------------
+
+let GrausCelsius = 25;
+let clima;
+
+if (GrausCelsius >= 25) {
+  clima = "Quente";
+} else if (GrausCelsius >= 20) {
+  clima = "Normal";
+} else {
+  clima = "Frio";
+}
+
+console.log(clima);
+
+// // ------------------------------
