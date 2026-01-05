@@ -40,3 +40,16 @@ let temperatura = 24;
 if (temperatura >= 25) {
   console.log("Está quente!");
 } else;
+
+// // ------------------------------
+
+let numero = 10;
+let status;
+if (numero >= 10) {
+  status = "O número é maior ou igual a 10";
+} else {
+  status = "O número é menor que 10";
+}
+console.log(status);
+
+// // ------------------------------
