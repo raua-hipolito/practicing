@@ -53,3 +53,15 @@ if (numero >= 10) {
 console.log(status);
 
 // // ------------------------------
+
+let age = 17;
+let category;
+
+if (age >= 18) {
+  category = "Maior de idade";
+} else {
+  category = "Menor de idade";
+}
+
+console.log(category);
+// // ------------------------------
