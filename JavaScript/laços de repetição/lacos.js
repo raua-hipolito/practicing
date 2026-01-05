@@ -40,3 +40,14 @@ for (let i = 0; i < alunos.length; i++) {
     console.log("Reprovado");
   }
 }
+
+// // ------------------------------
+
+let contador = 1;
+
+while (contador <= 5) {
+  console.log("Contagem: " + contador);
+  contador++;
+}
+
+// // ------------------------------
