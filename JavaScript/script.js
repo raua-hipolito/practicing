@@ -49,11 +49,21 @@ const input = require("readline-sync");
 
 // ------------------------------
 
-let user = input.question("Usuário: ");
-let senha = input.question("Digite sua senha:");
+// let user = input.question("Usuário: ");
+// let senha = input.question("Digite sua senha:");
 
-if (user === "Rauã" && senha === "1234") {
-  console.log("Bem vindo(a)!");
+// if (user === "Rauã" && senha === "1234") {
+//   console.log("Bem vindo(a)!");
+// } else {
+//   console.log("Usuário ou senha incorreto!");
+// }
+
+let horario = Number(input.question("Informe o horário(00h à 23h): "));
+
+if (horario < 0 || horario > 23 || isNaN(horario)) {
+  console.log("Horário inválido");
+} else if (horario >= 8 && horario <= 18) {
+  console.log("Dentro do horário comercial");
 } else {
-  console.log("Usuário ou senha incorreto!");
+  console.log("Fora do horário comercial");
 }
