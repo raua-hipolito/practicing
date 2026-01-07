@@ -39,10 +39,21 @@ const input = require("readline-sync");
 
 // ------------------------------
 
-let senha = Number(input.question("Digite sua senha: "));
+// let senha = Number(input.question("Digite sua senha: "));
 
-if (senha == 1234) {
-  console.log("Acesso permitido");
+// if (senha == 1234) {
+//   console.log("Acesso permitido");
+// } else {
+//   console.log("Acesso negado");
+// }
+
+// ------------------------------
+
+let user = input.question("Usuário: ");
+let senha = input.question("Digite sua senha:");
+
+if (user === "Rauã" && senha === "1234") {
+  console.log("Bem vindo(a)!");
 } else {
-  console.log("Acesso negado");
+  console.log("Usuário ou senha incorreto!");
 }
