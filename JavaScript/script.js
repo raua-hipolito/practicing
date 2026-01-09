@@ -148,14 +148,24 @@ const input = require("readline-sync");
 
 // ------------------------------// ------------------------------// ------------------------------
 
-const experiencia = input
-  .question("Você possui experiência? (sim ou nao): ")
-  .toLowerCase();
+// const experiencia = input
+//   .question("Você possui experiência? (sim ou nao): ")
+//   .toLowerCase();
 
-if (experiencia === "sim") {
-  console.log("Avançar para entrevista técnica");
-} else if (experiencia === "nao" || experiencia === "não") {
-  console.log("Encaminhar para teste prático");
+// if (experiencia === "sim") {
+//   console.log("Avançar para entrevista técnica");
+// } else if (experiencia === "nao" || experiencia === "não") {
+//   console.log("Encaminhar para teste prático");
+// } else {
+//   console.log("Resposta inválida");
+// }
+
+// ------------------------------// ------------------------------// ------------------------------
+
+const verificaEmail = input.question("Digite seu email: ");
+
+if (verificaEmail.includes("@")) {
+  console.log("E-mail válido");
 } else {
-  console.log("Resposta inválida");
+  console.log("E-mail inválido");
 }
