@@ -108,16 +108,28 @@ const input = require("readline-sync");
 
 // ------------------------------// ------------------------------// ------------------------------
 
-const statusPagamento = input
-  .question("Qual o status de pagamento(Pago ou pendente): ")
-  .toLowerCase();
+// const statusPagamento = input
+//   .question("Qual o status de pagamento(Pago ou pendente): ")
+//   .toLowerCase();
 
-if (statusPagamento === "pago") {
-  console.log("Pedido liberado para envio");
-} else if (statusPagamento === "pendente") {
-  console.log("Aguardando pagamento");
-} else {
-  console.log("Status inválido");
-}
+// if (statusPagamento === "pago") {
+//   console.log("Pedido liberado para envio");
+// } else if (statusPagamento === "pendente") {
+//   console.log("Aguardando pagamento");
+// } else {
+//   console.log("Status inválido");
+// }
 
 // ------------------------------// ------------------------------// ------------------------------
+
+const profile = input.question("Digite seu perfil: ").toLowerCase();
+
+if (profile === "admin") {
+  console.log("Acesso total");
+} else if (profile === "editor") {
+  console.log("Acesso parcial");
+} else if (profile === "visitante") {
+  console.log("Acesso limitado");
+} else {
+  console.log("Usuário não identicado");
+}
