@@ -135,3 +135,13 @@ const input = require("readline-sync");
 // }
 
 // ------------------------------// ------------------------------// ------------------------------
+
+const estoque = Number(input.question("Qual a quantidade de estoque: "));
+
+if (estoque < 0 || isNaN(estoque)) {
+  console.log("Quantidade inválida");
+} else if (estoque > 0) {
+  console.log("Produto disponível");
+} else {
+  console.log("Produto esgotado");
+}
