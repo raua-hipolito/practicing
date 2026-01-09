@@ -136,12 +136,26 @@ const input = require("readline-sync");
 
 // ------------------------------// ------------------------------// ------------------------------
 
-const estoque = Number(input.question("Qual a quantidade de estoque: "));
+// const estoque = Number(input.question("Qual a quantidade de estoque: "));
 
-if (estoque < 0 || isNaN(estoque)) {
-  console.log("Quantidade inválida");
-} else if (estoque > 0) {
-  console.log("Produto disponível");
+// if (estoque < 0 || isNaN(estoque)) {
+//   console.log("Quantidade inválida");
+// } else if (estoque > 0) {
+//   console.log("Produto disponível");
+// } else {
+//   console.log("Produto esgotado");
+// }
+
+// ------------------------------// ------------------------------// ------------------------------
+
+const experiencia = input
+  .question("Você possui experiência? (sim ou nao): ")
+  .toLowerCase();
+
+if (experiencia === "sim") {
+  console.log("Avançar para entrevista técnica");
+} else if (experiencia === "nao" || experiencia === "não") {
+  console.log("Encaminhar para teste prático");
 } else {
-  console.log("Produto esgotado");
+  console.log("Resposta inválida");
 }
