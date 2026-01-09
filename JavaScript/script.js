@@ -16,7 +16,7 @@ const input = require("readline-sync");
 
 // verificaVogais();
 
-// // ------------------------------
+// // ------------------------------// ------------------------------// ------------------------------
 
 // 2. Faça um script que pede duas notas de um aluno. Em seguida ele deve calcular a média do aluno e dar o seguinte resultado:
 
@@ -37,7 +37,7 @@ const input = require("readline-sync");
 //   console.log("Reprovado");
 // }
 
-// ------------------------------
+// ------------------------------// ------------------------------// ------------------------------
 
 // let senha = Number(input.question("Digite sua senha: "));
 
@@ -47,7 +47,7 @@ const input = require("readline-sync");
 //   console.log("Acesso negado");
 // }
 
-// ------------------------------
+// ------------------------------// ------------------------------// ------------------------------
 
 // let user = input.question("Usuário: ");
 // let senha = input.question("Digite sua senha:");
@@ -57,6 +57,8 @@ const input = require("readline-sync");
 // } else {
 //   console.log("Usuário ou senha incorreto!");
 // }
+
+// ------------------------------// ------------------------------// ------------------------------
 
 // let horario = Number(input.question("Informe o horário(00h à 23h): "));
 
@@ -68,6 +70,8 @@ const input = require("readline-sync");
 //   console.log("Fora do horário comercial");
 // }
 
+// ------------------------------// ------------------------------// ------------------------------
+
 // let notaFuncionário = 9;
 
 // if (notaFuncionário >= 9) {
@@ -78,12 +82,26 @@ const input = require("readline-sync");
 //   console.log("Precisa melhorar");
 // }
 
-const tempoEmpresa = Number(input.question("Qual é o tempo da empresa: "));
+// ------------------------------// ------------------------------// ------------------------------
 
-if (tempoEmpresa < 0 || isNaN(tempoEmpresa)) {
-  console.log("Número inválido");
-} else if (tempoEmpresa >= 2) {
-  console.log("Benefício liberado");
+// const tempoEmpresa = Number(input.question("Qual é o tempo da empresa: "));
+
+// if (tempoEmpresa < 0 || isNaN(tempoEmpresa)) {
+//   console.log("Número inválido");
+// } else if (tempoEmpresa >= 2) {
+//   console.log("Benefício liberado");
+// } else {
+//   console.log("Benefício indisponível");
+// }
+
+// ------------------------------// ------------------------------// ------------------------------
+
+const valorCompra = Number(input.question("Qual o valor da compra: "));
+
+if (valorCompra < 0 || isNaN(valorCompra)) {
+  console.log("Valor inválido");
+} else if (valorCompra >= 200) {
+  console.log(`Valor da compra R$${valorCompra.toFixed(2)}(Frete grátis)`);
 } else {
-  console.log("Benefício indisponível");
+  console.log("Frete será calculado");
 }
