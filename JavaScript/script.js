@@ -68,12 +68,22 @@ const input = require("readline-sync");
 //   console.log("Fora do horário comercial");
 // }
 
-let notaFuncionário = 9;
+// let notaFuncionário = 9;
 
-if (notaFuncionário >= 9) {
-  console.log("Excelente desempenho");
-} else if (notaFuncionário >= 7) {
-  console.log("Bom desempenho");
+// if (notaFuncionário >= 9) {
+//   console.log("Excelente desempenho");
+// } else if (notaFuncionário >= 7) {
+//   console.log("Bom desempenho");
+// } else {
+//   console.log("Precisa melhorar");
+// }
+
+const tempoEmpresa = Number(input.question("Qual é o tempo da empresa: "));
+
+if (tempoEmpresa < 0 || isNaN(tempoEmpresa)) {
+  console.log("Número inválido");
+} else if (tempoEmpresa >= 2) {
+  console.log("Benefício liberado");
 } else {
-  console.log("Precisa melhorar");
+  console.log("Benefício indisponível");
 }
