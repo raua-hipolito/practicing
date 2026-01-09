@@ -58,12 +58,22 @@ const input = require("readline-sync");
 //   console.log("Usuário ou senha incorreto!");
 // }
 
-let horario = Number(input.question("Informe o horário(00h à 23h): "));
+// let horario = Number(input.question("Informe o horário(00h à 23h): "));
 
-if (horario < 0 || horario > 23 || isNaN(horario)) {
-  console.log("Horário inválido");
-} else if (horario >= 8 && horario <= 18) {
-  console.log("Dentro do horário comercial");
+// if (horario < 0 || horario > 23 || isNaN(horario)) {
+//   console.log("Horário inválido");
+// } else if (horario >= 8 && horario <= 18) {
+//   console.log("Dentro do horário comercial");
+// } else {
+//   console.log("Fora do horário comercial");
+// }
+
+let notaFuncionário = 9;
+
+if (notaFuncionário >= 9) {
+  console.log("Excelente desempenho");
+} else if (notaFuncionário >= 7) {
+  console.log("Bom desempenho");
 } else {
-  console.log("Fora do horário comercial");
+  console.log("Precisa melhorar");
 }
