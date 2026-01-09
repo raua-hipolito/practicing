@@ -122,14 +122,16 @@ const input = require("readline-sync");
 
 // ------------------------------// ------------------------------// ------------------------------
 
-const profile = input.question("Digite seu perfil: ").toLowerCase();
+// const profile = input.question("Digite seu perfil: ").toLowerCase();
 
-if (profile === "admin") {
-  console.log("Acesso total");
-} else if (profile === "editor") {
-  console.log("Acesso parcial");
-} else if (profile === "visitante") {
-  console.log("Acesso limitado");
-} else {
-  console.log("Usuário não identicado");
-}
+// if (profile === "admin") {
+//   console.log("Acesso total");
+// } else if (profile === "editor") {
+//   console.log("Acesso parcial");
+// } else if (profile === "visitante") {
+//   console.log("Acesso limitado");
+// } else {
+//   console.log("Usuário não identicado");
+// }
+
+// ------------------------------// ------------------------------// ------------------------------
