@@ -27,3 +27,14 @@ const nomeUsuario = input.question("Insira seu nome: ");
 const idadeUsuario = Number(input.question("Insira sua idade: "));
 
 console.log(`Olá, meu nome é ${nomeUsuario} e tenho ${idadeUsuario} anos.`);
+
+// // ------------------------------// // ------------------------------// // ------------------------------
+
+const number1 = Number(input.question("Insira um número: "));
+const number2 = Number(input.question("Insira outro número: "));
+
+let soma = number1 + number2;
+
+let message = `A soma de ${number1} + ${number2} é igual a ${soma}.`;
+
+console.log(message);
