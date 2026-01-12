@@ -38,3 +38,12 @@ let soma = number1 + number2;
 let message = `A soma de ${number1} + ${number2} é igual a ${soma}.`;
 
 console.log(message);
+
+// // ------------------------------// // ------------------------------// // ------------------------------
+
+const nomeAluno = input.question("Insira seu nome: ");
+const notaAluno = Number(input.question("insira sua nota: "));
+
+let mensagem = `O aluno ${nomeAluno} tirou a nota ${notaAluno}`;
+
+console.log(mensagem);
