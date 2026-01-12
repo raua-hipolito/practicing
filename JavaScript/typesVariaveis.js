@@ -23,27 +23,36 @@ const input = require("readline-sync");
 
 // // ------------------------------// // ------------------------------// // ------------------------------
 
-const nomeUsuario = input.question("Insira seu nome: ");
-const idadeUsuario = Number(input.question("Insira sua idade: "));
+// const nomeUsuario = input.question("Insira seu nome: ");
+// const idadeUsuario = Number(input.question("Insira sua idade: "));
 
-console.log(`Olá, meu nome é ${nomeUsuario} e tenho ${idadeUsuario} anos.`);
-
-// // ------------------------------// // ------------------------------// // ------------------------------
-
-const number1 = Number(input.question("Insira um número: "));
-const number2 = Number(input.question("Insira outro número: "));
-
-let soma = number1 + number2;
-
-let message = `A soma de ${number1} + ${number2} é igual a ${soma}.`;
-
-console.log(message);
+// console.log(`Olá, meu nome é ${nomeUsuario} e tenho ${idadeUsuario} anos.`);
 
 // // ------------------------------// // ------------------------------// // ------------------------------
 
-const nomeAluno = input.question("Insira seu nome: ");
-const notaAluno = Number(input.question("insira sua nota: "));
+// const number1 = Number(input.question("Insira um número: "));
+// const number2 = Number(input.question("Insira outro número: "));
 
-let mensagem = `O aluno ${nomeAluno} tirou a nota ${notaAluno}`;
+// let soma = number1 + number2;
 
-console.log(mensagem);
+// let message = `A soma de ${number1} + ${number2} é igual a ${soma}.`;
+
+// console.log(message);
+
+// // ------------------------------// // ------------------------------// // ------------------------------
+
+// const nomeAluno = input.question("Insira seu nome: ");
+// const notaAluno = Number(input.question("insira sua nota: "));
+
+// let mensagem = `O aluno ${nomeAluno} tirou a nota ${notaAluno}`;
+
+// console.log(mensagem);
+
+// // ------------------------------// // ------------------------------// // ------------------------------
+
+const nomeProduto = input.question("Insira o nome do produto: ");
+const precoDoProduto = Number(input.question("Insira o preço do produto: "));
+
+console.log(`o produto ${nomeProduto} custa R$${precoDoProduto.toFixed(2)}`);
+
+// // ------------------------------// // ------------------------------// // ------------------------------
