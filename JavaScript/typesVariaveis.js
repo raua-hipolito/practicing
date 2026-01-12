@@ -50,9 +50,13 @@ const input = require("readline-sync");
 
 // // ------------------------------// // ------------------------------// // ------------------------------
 
-const nomeProduto = input.question("Insira o nome do produto: ");
-const precoDoProduto = Number(input.question("Insira o preço do produto: "));
+// const nomeProduto = input.question("Insira o nome do produto: ");
+// const precoDoProduto = Number(input.question("Insira o preço do produto: "));
 
-console.log(`o produto ${nomeProduto} custa R$${precoDoProduto.toFixed(2)}`);
+// console.log(`o produto ${nomeProduto} custa R$${precoDoProduto.toFixed(2)}`);
 
 // // ------------------------------// // ------------------------------// // ------------------------------
+
+const hora = Number(input.question("Qual o horário atual(0 a 23)?: "));
+
+console.log(`Agora são ${hora} horas.`);
