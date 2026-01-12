@@ -51,3 +51,25 @@ console.log(ingredientes);
 // De olho na dica 👀 : Para facilitar a manipulação de listas, sem precisar escrevê-las do zero quando quiser substituir um valor, utilize o índice do item que você quer substituir.
 
 // Recuperando o tamanho de um array
+
+const convidados = [
+  "Sheila",
+  "Cleyton",
+  "Leticia",
+  "Gisele",
+  "Vinicius",
+  "Ivan",
+  "Laura",
+  "Guilherme",
+  "Erickson",
+  "Claudio",
+  "Adilson",
+  "Juliana",
+];
+
+const quantidadePessoas = convidados;
+
+convidados.push("Evelyn");
+
+console.log(convidados);
+console.log(quantidadePessoas.length);
