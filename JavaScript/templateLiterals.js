@@ -117,11 +117,23 @@ const input = require("readline-sync");
 
 // ------------------------------// // ------------------------------// // ------------------------------
 
-const user = input.question("Digite seu usuário: ").toLowerCase();
-const senha = input.question("Digite sua senha: ");
+// const user = input.question("Digite seu usuário: ").toLowerCase();
+// const senha = input.question("Digite sua senha: ");
 
-if (user == "admin" && senha === "1234") {
-  console.log(`Bem-vindo, ${user}! Acesso liberado`);
+// if (user == "admin" && senha === "1234") {
+//   console.log(`Bem-vindo, ${user}! Acesso liberado`);
+// } else {
+//   console.log("Usuário ou senha inválidos.");
+// }
+
+// ------------------------------// // ------------------------------// // ------------------------------
+
+const hora = Number(input.question("Que horas são(00 a 23)? "));
+
+if (isNaN(hora) || hora < 0 || hora > 23) {
+  console.log("Horário inválido");
+} else if (hora >= 8 && hora <= 18) {
+  console.log(`Agora são ${hora} horas. Estamos em horário comercial`);
 } else {
-  console.log("Usuário ou senha inválidos.");
+  console.log(`Agora são ${hora} horas. Estamos fora do horário comercial`);
 }
