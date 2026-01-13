@@ -82,23 +82,37 @@ const input = require("readline-sync");
 
 // // ------------------------------// // ------------------------------// // ------------------------------
 
-const nomeAluno = input.question("Qual o seu nome? ");
-const nota1 = Number(input.question("Qual sua primeira nota? "));
-const nota2 = Number(input.question("Qual a sua segunda nota? "));
+// const nomeAluno = input.question("Qual o seu nome? ");
+// const nota1 = Number(input.question("Qual sua primeira nota? "));
+// const nota2 = Number(input.question("Qual a sua segunda nota? "));
 
-const media = (nota1 + nota2) / 2;
+// const media = (nota1 + nota2) / 2;
 
-if (
-  isNaN(nota1) ||
-  isNaN(nota2) ||
-  nota1 < 0 ||
-  nota2 < 0 ||
-  nota1 > 10 ||
-  nota2 > 10
-) {
-  console.log("Nota inválida");
-} else if (media >= 7) {
-  console.log(`o aluno ${nomeAluno} foi APROVADO com média ${media}.`);
-} else if (media < 7) {
-  console.log(`o aluno ${nomeAluno} foi REPROVADO com média ${media}.`);
+// if (
+//   isNaN(nota1) ||
+//   isNaN(nota2) ||
+//   nota1 < 0 ||
+//   nota2 < 0 ||
+//   nota1 > 10 ||
+//   nota2 > 10
+// ) {
+//   console.log("Nota inválida");
+// } else if (media >= 7) {
+//   console.log(`o aluno ${nomeAluno} foi APROVADO com média ${media}.`);
+// } else if (media < 7) {
+//   console.log(`o aluno ${nomeAluno} foi REPROVADO com média ${media}.`);
+// }
+
+// // ------------------------------// // ------------------------------// // ------------------------------
+
+const numero = Number(input.question("Digite um número: "));
+
+if (isNaN(numero)) {
+  console.log("Número inválido");
+} else if (numero % 2 === 0) {
+  console.log(`o número ${numero} é PAR`);
+} else {
+  console.log(`o número ${numero} é ÍMPAR`);
 }
+
+// ------------------------------// // ------------------------------// // ------------------------------
