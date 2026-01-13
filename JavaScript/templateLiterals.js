@@ -105,14 +105,23 @@ const input = require("readline-sync");
 
 // // ------------------------------// // ------------------------------// // ------------------------------
 
-const numero = Number(input.question("Digite um número: "));
+// const numero = Number(input.question("Digite um número: "));
 
-if (isNaN(numero)) {
-  console.log("Número inválido");
-} else if (numero % 2 === 0) {
-  console.log(`o número ${numero} é PAR`);
-} else {
-  console.log(`o número ${numero} é ÍMPAR`);
-}
+// if (isNaN(numero)) {
+//   console.log("Número inválido");
+// } else if (numero % 2 === 0) {
+//   console.log(`o número ${numero} é PAR`);
+// } else {
+//   console.log(`o número ${numero} é ÍMPAR`);
+// }
 
 // ------------------------------// // ------------------------------// // ------------------------------
+
+const user = input.question("Digite seu usuário: ").toLowerCase();
+const senha = input.question("Digite sua senha: ");
+
+if (user == "admin" && senha === "1234") {
+  console.log(`Bem-vindo, ${user}! Acesso liberado`);
+} else {
+  console.log("Usuário ou senha inválidos.");
+}
