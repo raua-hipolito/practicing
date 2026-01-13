@@ -65,17 +65,40 @@ const input = require("readline-sync");
 
 // TEMPLATE LITERALS + IF E ELSE
 
-const nome = input.question("Qual o seu nome? ");
-const idade = Number(input.question("Qual sua idade? "));
+// const nome = input.question("Qual o seu nome? ");
+// const idade = Number(input.question("Qual sua idade? "));
 
-let message;
+// let message;
 
-if (isNaN(idade) || idade < 0) {
-  message = "Idade inválida inválido";
-} else if (idade >= 18) {
-  message = `${nome} é maior de idade.`;
-} else {
-  message = `${nome} é menor de idade`;
+// if (isNaN(idade) || idade < 0) {
+//   message = "Idade inválida inválido";
+// } else if (idade >= 18) {
+//   message = `${nome} é maior de idade.`;
+// } else {
+//   message = `${nome} é menor de idade`;
+// }
+
+// console.log(message);
+
+// // ------------------------------// // ------------------------------// // ------------------------------
+
+const nomeAluno = input.question("Qual o seu nome? ");
+const nota1 = Number(input.question("Qual sua primeira nota? "));
+const nota2 = Number(input.question("Qual a sua segunda nota? "));
+
+const media = (nota1 + nota2) / 2;
+
+if (
+  isNaN(nota1) ||
+  isNaN(nota2) ||
+  nota1 < 0 ||
+  nota2 < 0 ||
+  nota1 > 10 ||
+  nota2 > 10
+) {
+  console.log("Nota inválida");
+} else if (media >= 7) {
+  console.log(`o aluno ${nomeAluno} foi APROVADO com média ${media}.`);
+} else if (media < 7) {
+  console.log(`o aluno ${nomeAluno} foi REPROVADO com média ${media}.`);
 }
-
-console.log(message);
