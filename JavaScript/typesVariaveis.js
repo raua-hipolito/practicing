@@ -57,6 +57,25 @@ const input = require("readline-sync");
 
 // // ------------------------------// // ------------------------------// // ------------------------------
 
-const hora = Number(input.question("Qual o horário atual(0 a 23)?: "));
+// const hora = Number(input.question("Qual o horário atual(0 a 23)?: "));
 
-console.log(`Agora são ${hora} horas.`);
+// console.log(`Agora são ${hora} horas.`);
+
+// // ------------------------------// // ------------------------------// // ------------------------------
+
+// TEMPLATE LITERALS + IF E ELSE
+
+const nome = input.question("Qual o seu nome? ");
+const idade = Number(input.question("Qual sua idade? "));
+
+let message;
+
+if (isNaN(idade) || idade < 0) {
+  message = "Idade inválida inválido";
+} else if (idade >= 18) {
+  message = `${nome} é maior de idade.`;
+} else {
+  message = `${nome} é menor de idade`;
+}
+
+console.log(message);
