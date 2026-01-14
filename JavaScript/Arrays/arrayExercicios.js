@@ -1,3 +1,5 @@
+const input = require("readline-sync");
+
 const frutas = ["banana", "maça", "uva", "acerola", "manga"];
 
 // console.log(frutas[0]);
@@ -41,3 +43,13 @@ fiveNumber.pop();
 console.log(fiveNumber);
 
 // ======================================================================================//===================================================================
+
+const cidades = ["Barcarena", "Floripa", "rio", "Aracaju"];
+
+const verificaCidade = input.question("Digite uma cidade: ").toLowerCase();
+
+if (cidades.includes(verificaCidade)) {
+  console.log("Cidade encontrada");
+} else {
+  console.log("Cidade não encontrada");
+}
