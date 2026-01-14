@@ -7,7 +7,7 @@ const pizzas = [
   "pepperoni",
 ];
 
-console.log(pizzas[3]);
+// console.log(pizzas[3]);
 
 // Adicionando um valor a um array
 
@@ -15,7 +15,7 @@ const listaDeCompras = ["arroz", "feijão", "ovo"];
 
 listaDeCompras.push("farofa");
 
-console.log(listaDeCompras);
+// console.log(listaDeCompras);
 
 // ------------------------------// ------------------------------// ------------------------------
 
@@ -23,7 +23,7 @@ const titulosCopaDoMundo = [1958, 1962, 1970, 1994];
 
 titulosCopaDoMundo[4] = 2002;
 
-console.log(titulosCopaDoMundo);
+// console.log(titulosCopaDoMundo);
 
 // Substituindo um item em um array
 
@@ -38,7 +38,7 @@ const estadosNorte = [
 ];
 
 estadosNorte[3] = "Pará";
-console.log(estadosNorte);
+// console.log(estadosNorte);
 
 // ------------------------------// ------------------------------// ------------------------------
 
@@ -46,7 +46,7 @@ const ingredientes = ["arroz", "batata", "cenoura", "sal", "pimenta do reino"];
 
 ingredientes[2] = "suco";
 
-console.log(ingredientes);
+// console.log(ingredientes);
 
 // De olho na dica 👀 : Para facilitar a manipulação de listas, sem precisar escrevê-las do zero quando quiser substituir um valor, utilize o índice do item que você quer substituir.
 
@@ -71,5 +71,19 @@ const quantidadePessoas = convidados;
 
 convidados.push("Evelyn");
 
-console.log(convidados);
-console.log(quantidadePessoas.length);
+// console.log(convidados);
+// console.log(quantidadePessoas.length);
+
+// push()	Adiciona um elemento ao final do array
+// unshift()	Adiciona um elemento no início do array
+// pop()	Remove o último elemento do array
+// shift()	Remove o primeiro elemento do array
+
+const shoppingList = ["Arroz", "Batata", "Leite Ninho", "Sucrilhos"];
+
+shoppingList.push("banana");
+shoppingList.unshift("Açai");
+shoppingList.pop();
+shoppingList.shift();
+
+console.log(shoppingList.length);
