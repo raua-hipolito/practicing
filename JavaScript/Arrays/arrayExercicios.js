@@ -53,3 +53,28 @@ if (cidades.includes(verificaCidade)) {
 } else {
   console.log("Cidade não encontrada");
 }
+
+// ======================================================================================//===================================================================
+
+const numeros = [22, 45, 10, 94];
+let maiorNumero = numeros[0];
+
+for (let i = 0; i < numeros.length; i++) {
+  if (numeros[i] > maiorNumero) {
+    maiorNumero = numeros[i];
+  }
+}
+console.log(maiorNumero);
+
+// ======================================================================================//===================================================================
+
+const notasAlunos = [10, 4, 7, 8, 3];
+
+let aprovados = 0;
+
+for (let i = 0; i < notasAlunos.length; i++) {
+  if (notasAlunos[i] >= 7) {
+    aprovados++;
+  }
+}
+console.log(`Quantidade de aprovados: ${aprovados}`);
