@@ -127,3 +127,11 @@ for (let i = 1; i <= 5; i += 1) {
   soma += i;
   console.log(`Somando ${i}, total agora é ${soma}`);
 }
+
+// // ------------------------------// // ------------------------------// // ------------------------------// // ------------------------------
+
+const nomes = ["Ana", "João", "Maria", "Pedro", "Lucas"];
+
+for (let i = 0; i < nomes.length; i += 1) {
+  console.log(nomes[i]);
+}
