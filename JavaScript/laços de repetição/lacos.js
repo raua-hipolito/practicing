@@ -86,6 +86,15 @@ let frutas = [
   "Kiwi",
 ];
 
-for (let i = 0; i < frutas.length; i++) {
+for (let i = 0; i < frutas.length; i += 1) {
   console.log(`Posição ${i} - ${frutas[i]}`);
+}
+
+// // ------------------------------// // ------------------------------// // ------------------------------// // ------------------------------
+
+const groceryList = ["Arroz", "Feijão", "Alface", "Melancia", "Macarrão"];
+
+for (let i = 0; i < groceryList.length; i += 1) {
+  const element = groceryList[i];
+  console.log(element);
 }
