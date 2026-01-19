@@ -70,3 +70,22 @@ for (let i = 2; i <= 150; i++) {
     }
   }
 }
+
+// // ------------------------------// // ------------------------------// // ------------------------------// // ------------------------------
+
+let frutas = [
+  "Maçã",
+  "Banana",
+  "Laranja",
+  "Uva",
+  "Manga",
+  "Abacaxi",
+  "Melancia",
+  "Morango",
+  "Pera",
+  "Kiwi",
+];
+
+for (let i = 0; i < frutas.length; i++) {
+  console.log(`Posição ${i} - ${frutas[i]}`);
+}
