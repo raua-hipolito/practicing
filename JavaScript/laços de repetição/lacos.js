@@ -135,3 +135,11 @@ const nomes = ["Ana", "João", "Maria", "Pedro", "Lucas"];
 for (let i = 0; i < nomes.length; i += 1) {
   console.log(nomes[i]);
 }
+
+// // ------------------------------// // ------------------------------// // ------------------------------// // ------------------------------
+
+let numero = 4;
+
+for (let i = 0; i <= 10; i += 1) {
+  console.log(`${numero} x ${i} = ${i * numero} `);
+}
