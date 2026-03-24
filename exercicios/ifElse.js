@@ -1,13 +1,27 @@
 const input = require("readline-sync");
 
 // let number = 13;
-let number = Number(input.question("Digite um numero: "));
+// let number = Number(input.question("Digite um numero: "));
 
 
-if (number % 2 === 0) {
-    console.log("Número é par");
+// if (number % 2 === 0) {
+//     console.log("Número é par");
 
-} else {
-    console.log("Número é impar ");
+// } else {
+//     console.log("Número é impar ");
 
+// }
+
+// ===============================================================================================================================
+
+let numero = Number(input.question('digite um número: '));
+
+if (numero === 0) {
+    console.log('Número zero!');
+}
+else if (numero > 0) {
+    console.log('Número positivo!');
+}
+else {
+    console.log('Número negativo');
 }
