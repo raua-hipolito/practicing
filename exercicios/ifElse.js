@@ -14,14 +14,26 @@ const input = require("readline-sync");
 
 // ===============================================================================================================================
 
-let numero = Number(input.question('digite um número: '));
+// let numero = Number(input.question('digite um número: '));
 
-if (numero === 0) {
-    console.log('Número zero!');
-}
-else if (numero > 0) {
-    console.log('Número positivo!');
+// if (numero === 0) {
+//     console.log('Número zero!');
+// }
+// else if (numero > 0) {
+//     console.log('Número positivo!');
+// }
+// else {
+//     console.log('Número negativo');
+// }
+
+// ===============================================================================================================================
+
+let idade = 17;
+let temCarteira = true;
+
+if (idade >= 18 && temCarteira) {
+    console.log("Pode dirigir");
 }
 else {
-    console.log('Número negativo');
-}
+    console.log("Não pode dirigir");
+};
