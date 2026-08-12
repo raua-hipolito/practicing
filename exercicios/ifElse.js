@@ -28,12 +28,20 @@ const input = require("readline-sync");
 
 // ===============================================================================================================================
 
-let idade = 17;
-let temCarteira = true;
+// let idade = 17;
+// let temCarteira = true;
 
-if (idade >= 18 && temCarteira) {
-    console.log("Pode dirigir");
+// if (idade >= 18 && temCarteira) {
+//     console.log("Pode dirigir");
+// }
+// else {
+//     console.log("Não pode dirigir");
+// };
+
+// ===============================================================================================================================
+
+const nota = Number(input.question('Digite sua nota: '));
+
+if (isNaN(nota)) {
+    console.log('Nota inválida');
 }
-else {
-    console.log("Não pode dirigir");
-};
